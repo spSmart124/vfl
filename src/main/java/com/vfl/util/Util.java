@@ -25,7 +25,7 @@ public class Util {
 
         DefaultExecuteResultHandler resultHandler = new DefaultExecuteResultHandler();
 
-        ExecuteWatchdog watchdog = ExecuteWatchdog.builder().setTimeout(Duration.ofMillis(500)).get();
+        ExecuteWatchdog watchdog = ExecuteWatchdog.builder().setTimeout(Duration.ofMillis(2000)).get();
         Executor executor = DefaultExecutor.builder().get();
         executor.setExitValue(1);
         executor.setWatchdog(watchdog);
