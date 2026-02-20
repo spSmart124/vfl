@@ -1,6 +1,10 @@
-package com.vfl.webservice;
+package com.vfl.dto;
 
-public class Case {
+
+import com.vfl.structure.Force;
+import com.vfl.structure.Kibana;
+
+public class Case implements ITemplate{
     private String caseNo;
     private String orgId;
     private String pod;
@@ -9,14 +13,25 @@ public class Case {
     private String issue;
     private String description;
     private String observation;
+    private final Class[] structures = {Kibana.class, Force.class};
 
 
-    public String getCaseNo() {
+    private String getCaseNo() {
         return caseNo;
     }
 
     public void setCaseNo(String caseNo) {
         this.caseNo = caseNo;
+    }
+
+    @Override
+    public String getNo() {
+        return getCaseNo();
+    }
+
+    @Override
+    public Class[] findStructures() {
+        return structures;
     }
 
     public String getOrgId() {
