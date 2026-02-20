@@ -16,7 +16,7 @@
 	</parent>
 	<groupId>com.vfl</groupId>
 	<artifactId>vfl</artifactId>
-	<version>2025-2606-SNAPSHOT</version>
+	<version>2026-2002-SNAPSHOT</version>
 	<name>vfl</name>
 	<description>Vocal for local (vfl) project. It focuses on local development and analysis for faster response and improved experience</description>
 	<properties>

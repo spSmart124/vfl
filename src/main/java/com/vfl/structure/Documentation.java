@@ -1,9 +1,5 @@
 package com.vfl.structure;
 
-import com.vfl.util.FileFormat;
-
-import java.io.File;
-
 public class Documentation {
     private String link;
     private String subject;
